@@ -50,7 +50,7 @@
     (do (println "All versions are up to date!")
         0)))
 
-(defn -main []
+(defn -main [& _args]
   (->> (deps-edn)
        deps
        (keep outdated?)
